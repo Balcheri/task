@@ -1,0 +1,151 @@
+美化html
+
+颜色/文字大小：![QQ图片20201113214137](C:\Users\18352\Desktop\QQ图片20201113214137.png)![QQ图片20201113214055](C:\Users\18352\Desktop\QQ图片20201113214055.png)
+
+# 选择器
+
+###### 选择器就是根据不同要求把不同的标签选出来这就是选择器的作用，简单的来说，就是选择标签用的。
+
+h1  {color：red；}
+
+1，找到所有的h1标签。选择器（选对人）。
+
+2，设置这些标签的样式，比如颜色为红色（做对事）。
+
+**标签选择器**
+
+优点：能快速为页面中同一类的标签进行统一设置
+
+缺点：不能设计差异化样式，只能选择全部的当前标签
+
+**类选择器**（样式点定义，结构类（class）调用）：单独选择一个
+
+.red （点后的叫类名）{
+
+color:  red（类）;
+
+}
+
+div class="red">变红色（在相应的地方用class调用）
+
+###### 不能用标签名做类名，不能使用数字中文。用英文或者汉字
+
+可多用，可以在一个标签添加多个类名
+
+**id选择器**（样式#定义，结构id调用，只能调用一次，别人切勿使用）
+
+#id名{属性1：属性值；
+
+​                       ...       }
+
+调用
+
+#nav{
+
+color：red；}
+
+div  id="pink">粉红色（id属性）
+
+**通配选择器**
+
+*{属性1：属性值；
+
+...
+
+}
+
+把所有标签都改变颜色。
+
+# 字体
+
+font-family定义
+
+p {font-family："微软雅黑"；}
+
+div{font-family：Arial，"Microsoft Yahei","微软雅黑”；}（各个字体用逗号分开）
+
+字体大小
+
+p{font-size ：16px；（必须加px）
+
+}
+
+文字加粗
+
+p{font-weight：700；（400变粗，700不变粗）
+
+}
+
+文字斜体
+
+font-style：nomal；
+
+| 属性值 | 作用                                                    |
+| ------ | ------------------------------------------------------- |
+| normal | 默认值，浏览器会显示标准的字体样式 font-style：normal； |
+| italic | 浏览器会显示斜体的字体样式。                            |
+
+`可用符合代码`
+
+## CSS 盒子模型
+
+所有HTML元素可以看作盒子，在CSS中，"box model"这一术语是用来设计和布局时使用。
+
+CSS盒模型本质上是一个盒子，封装周围的HTML元素，它包括：边距，边框，填充，和实际内容。
+
+盒模型允许我们在其它元素和周围元素边框之间的空间放置元素。
+
+网页核心：用css摆放盒子的位置
+
+盒子的组成部分：边距，边框，填充，和实际内容
+
+![QQ图片20201113233122](C:\Users\18352\Desktop\QQ图片20201113233122.png)
+
+## border：![QQ图片20201113233319](C:\Users\18352\Desktop\QQ图片20201113233319.png)
+
+dotted: 定义一个点线边框dashed: 定义一个虚线边框
+
+solid: 定义实线边框
+
+double: 定义两个边框。 两个边框的宽度和 border-width 的值相同
+
+groove: 定义3D沟槽边框。效果取决于边框的颜色值
+
+ridge: 定义3D脊边框。效果取决于边框的颜色值
+
+inset:定义一个3D的嵌入边框。效果取决于边框的颜色值
+
+outset: 定义一个3D突出边框。 效果取决于边框的颜色值
+
+none: 默认无边框
+
+border-style：outset  也可以进行复合型写法
+
+# outline
+
+| [outline](https://www.runoob.com/cssref/pr-outline.html)     | 在一个声明中设置所有的轮廓属性 | *outline-color outline-style outline-width *inherit          | 2    |
+| ------------------------------------------------------------ | ------------------------------ | ------------------------------------------------------------ | ---- |
+| [outline-color](https://www.runoob.com/cssref/pr-outline-color.html) | 设置轮廓的颜色                 | *color-name hex-number rgb-number *invert inherit            | 2    |
+| [outline-style](https://www.runoob.com/cssref/pr-outline-style.html) | 设置轮廓的样式                 | none dotted dashed solid double groove ridge inset outset inherit | 2    |
+| [outline-width](https://www.runoob.com/cssref/pr-outline-width.html) | 设置轮廓的宽度                 | thin<br/>medium<br/>thick<br/>*length<br/>*inherit           | 2    |
+
+## margin 
+
+可以单独改变元素的上，下，左，右边距，也可以一次改变所有的属性。
+
+| 值       | 说明                                        |
+| :------- | :------------------------------------------ |
+| auto     | 设置浏览器边距。 这样做的结果会依赖于浏览器 |
+| *length* | 定义一个固定的margin（使用像素，pt，em等）  |
+| *%*      | 定义一个使用百分比的边距                    |
+
+![Remark](https://www.runoob.com/images/lamp.gif) Margin可以使用负值，重叠的内容。
+
+## padding
+
+| 值       | 说明                                |
+| :------- | :---------------------------------- |
+| *length* | 定义一个固定的填充(像素, pt, em,等) |
+| *%*      | 使用百分比值定义一个填充            |
+
+在CSS中，它可以指定不同的侧面不同的填充

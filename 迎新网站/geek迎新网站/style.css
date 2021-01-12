@@ -1,0 +1,105 @@
+.main{
+height:;
+weight:;
+}
+.sy{
+
+}
+.fxjs{
+
+}
+.qhdkf{
+
+}
+.aqgcs{
+
+}
+.sf{
+
+}
+.cpjl{
+
+}
+.uisj{
+
+}
+.gdwt{
+
+}
+.wtl{
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+ 
+  .container{
+
+    max-width: 600px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+
+  
+  .title{
+    background-color: #b2dbf3;
+    display: flex;
+    color: #fff;
+    padding: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .icon{
+    position: relative;
+    width: 14px;
+  }
+  
+  .icon::before, .icon::after{
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 3px;
+    background-color: #fff;
+    top: -1.5px;
+  }
+  
+  .icon::after{
+    transform: rotate(90deg);
+    transition: .5s linear;
+  }
+  
+  .text{
+    background-color: #ffffff60;
+    color: rgb(20, 79, 119);
+    line-height: 26px;
+    margin: 6px 0;
+    opacity: 0;
+    height: 0;
+  }
+  
+  .item:target .text{
+    height: auto;
+    opacity: 1;
+    padding: 20px;
+    margin: 12px 0;
+  }
+  
+  .item:target .icon::after{
+    transform: rotate(0);
+  }
+  
+ 
